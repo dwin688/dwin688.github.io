@@ -1,0 +1,11 @@
+.reveal-modal-bg { position:fixed; height:100%;width:100%;background:#000;background:rgba(0,0,0,.8);z-index:100;display:none;top:0;left:0; }
+
+.reveal-modal { visibility: hidden; overflow:hidden; width:90%; margin:5%; position:fixed; z-index:500; background:#f2f2f2; height:90%; border-radius:10px; } 
+
+.reveal-modal .tit { background:#ffffff; width:96%; height:5%; padding:3% 2% 0 2%; border-bottom:1px solid #ebebeb; }
+.reveal-modal .tit span { font-size:16px; }
+.reveal-modal .con { height:90%;  width:92%; padding:0 4%; overflow-y:auto; -webkit-overflow-scrolling: touch; line-height:1.8; font-size:14px; }
+.reveal-modal .con p { width:100%; }
+.reveal-modal .con div { width:100%; text-align:center; }
+.reveal-modal .con div img { width:80%; margin:20px 0; }
+.reveal-modal .close-reveal-modal {font-size:22px; position:absolute;top:7px;right:11px;color:#333333; text-shadow:0 -1px 1px rbga(0,0,0,.6);font-weight:700; cursor:pointer; }
