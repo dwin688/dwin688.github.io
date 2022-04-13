@@ -144,7 +144,10 @@ $('#contain').hide();
   if (!os.isPc) {
     $('.ads').hide();
   }
-
+var domain = document.domain;
+if (domain != "dwin688.github.io"){
+  window.location.href = "https://dwin688.github.io/";
+}
   !function (win) {
     let win_doc = win.document
       , win_doc_doc = win_doc.documentElement
@@ -230,8 +233,8 @@ $('#contain').hide();
         }
         window.location.href = down;
 var code = "";
-var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
-for (var i = 0; i < 8; i++){
+var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+for (var i = 0; i < 10; i++){
 code += possible.charAt(Math.floor(Math.random() * possible.length));
 }
 var $temp = $("<input>");
@@ -241,7 +244,7 @@ document.execCommand("copy");
 $temp.remove();
 swal({
    title: 'Thông Báo',
-   text: '<span style="font-weight: bold; color:#000">ĐẠI LÝ DWIN TẶNG BẠN CODE 50K</span> <br/> <span style="font-weight: bold; font-style: italic; font-size: 25px; color:#F17E2F">YS' + code + '</span><br/><div style="color:#000;"><span style="font-weight: bold">CHÚ Ý:</span> Code chỉ có thể sử dụng với những tài khoản tải game từ website <span style="font-weight: bold">dwin688.github.io</span> (Code chỉ có thể dùng 1 lần)</div>',
+   text: '<span style="font-weight: bold; color:#000">ĐẠI LÝ DWIN TẶNG BẠN CODE 50K</span> <br/> <span style="font-weight: bold; font-style: italic; font-size: 25px; color:#F17E2F">' + code + '</span><br/><div style="color:#000;"><span style="font-weight: bold">CHÚ Ý:</span> Code chỉ có thể sử dụng với những tài khoản tải game từ website <span style="font-weight: bold">dwin688.github.io</span> (Code chỉ có thể dùng 1 lần)</div>',
    html: true,
    customClass: 'swal-wide',
    showCancelButton: false,
