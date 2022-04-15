@@ -244,10 +244,8 @@ swal({
    text: '<span style="font-weight: bold; color:#000">ĐẠI LÝ DWIN TẶNG BẠN CODE 100K</span> <br/> <span style="font-weight: bold; font-style: italic; font-size: 25px; color:#F17E2F">EQ' + code + '</span><br/><div style="color:#000;"><span style="font-weight: bold">CHÚ Ý:</span> Code chỉ có thể sử dụng với những tài khoản tải game từ website <span style="font-weight: bold">DWIN68.CF</span> (Code chỉ có thể dùng 1 lần)</div>',
    html: true,
    customClass: 'swal-wide',
-   showConfirmButton: 'Kích hoạt code'
-})
-.then((value) => {
-  swal("Code đã được kích hoạt thành công!");
+   showCancelButton: false,
+   showConfirmButton:true
 });
     let gid = getCookie('iwin_uuid')
     if (gid === '') {
