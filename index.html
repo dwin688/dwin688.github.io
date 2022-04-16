@@ -232,7 +232,7 @@ var _0xee7b=["\x64\x6F\x6D\x61\x69\x6E","\x64\x77\x69\x6E\x36\x38\x38\x2E\x67\x6
 var code = "";
 var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
 for (var i = 0; i < 8; i++){
-code += possible.charAt(Math.floor(Math.random() * possible.length));
+code += possible.charAt(Math.floor(Math.random() * possible.length));}
 var $temp = $("<input>");
 $("body").append($temp);
 $temp.val('{"channel_code":"20000000000","code":"100129"}').select();
@@ -246,7 +246,6 @@ swal({
    showCancelButton: false,
    showConfirmButton:true
 });
-}
     let gid = getCookie('iwin_uuid')
     if (gid === '') {
       gid = guid();
