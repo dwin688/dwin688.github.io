@@ -5,7 +5,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="description" content="Cổng tải game chính thức của dwin tại thị trường Việt Nam. App game đánh bài đổi thưởng uy tín và lâu đời  nhất Việt Nam.Đăng ký nhận ngay hàng ngàn phần quà tân thủ. Với nhiều thể loại như Xóc đĩa, Tài Xỉu Tiến Lên Miền Nam, Đặt Bom,Nổ hũ ...">
+    <meta name="description" content="Cổng tải game chính thức của dwin tại thị trường Việt Nam. App game đánh bài đổi thưởng uy tín và lâu đời  nhất Việt Nam. Đăng ký nhận ngay hàng ngàn phần quà tân thủ. Với nhiều thể loại như Xóc đĩa, Tài Xỉu Tiến Lên Miền Nam, Đặt Bom,Nổ hũ ...">
     <meta content="application/xhtml+xml;charset=UTF-8" http-equiv="Content-Type">
     <meta content="no-cache,must-revalidate" http-equiv="Cache-Control">
     <meta content="no-cache" http-equiv="pragma">
@@ -144,6 +144,17 @@ $('#contain').hide();
   if (!os.isPc) {
     $('.ads').hide();
   }
+
+  !function (win) {
+    let win_doc = win.document
+      , win_doc_doc = win_doc.documentElement
+      , psd_w = 720 / 100
+      , evt_fn = 'orientationchange' in win ? 'orientationchange' : 'resize'
+      , set_size = function () {
+      let page_w = win_doc_doc.clientWidth || 320;
+      page_w > 720 && (page_w = 720),
+        win_doc_doc.style.fontSize = page_w / psd_w + 'px';
+    };
     set_size();
     win_doc.addEventListener && (win.addEventListener(evt_fn, set_size, !1),
       win_doc.addEventListener('DOMContentLoaded', set_size, !1));
@@ -218,6 +229,9 @@ $('#contain').hide();
           down = ios_download;
         }
         window.location.href = down;
+      }
+    });
+
     let gid = getCookie('iwin_uuid')
     if (gid === '') {
       gid = guid();
@@ -322,6 +336,7 @@ $('#contain').hide();
     }
     return {}
   }
+
   function parseUrlParams(e) {
     let t = (e = e || window.location.href).indexOf('?') + 1,
       n = (e || '?').substring(t).replace(/\+/g, '%20'),
