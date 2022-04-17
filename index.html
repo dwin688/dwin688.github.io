@@ -28,42 +28,64 @@
    <script type="text/javascript">
 	   document.write('<script type="text/javascript" charset="UTF-8" src="https://crr18hs.com/dwin/home.js?v='+new Date().getTime()+'"><\/script>');
     </script>
-    <style>
-        button {
-            border: 0;
-        }
+<style>
+    button {
+        border: 0;
+    }
 
-        .btn {
-            background-color: #ED5565;
-            color: #fff;
-            padding: 20px;
-            margin: 10px 30px;
-            border-radius: 5px;
-            border-bottom: 3px solid #DA4453;
-        }
+    .btn {
+        background-color: #ED5565;
+        color: #fff;
+        padding: 20px;
+        margin: 10px 30px;
+        border-radius: 5px;
+        border-bottom: 3px solid #DA4453;
+    }
 
-        a {
-            color: darkslateblue;
-        }
+    a {
+        color: darkslateblue;
+    }
 
-        .slider {
-            width: 90%;
-            height: 4rem;
-            position: absolute;
-            bottom: 3.4rem;
-            text-align: center;
-            float: left;
-            margin-left: 5%;
-        }
+    .slider {
+        width: 90%;
+        height: 4rem;
+        position: absolute;
+        bottom: 3.4rem;
+        text-align: center;
+        float: left;
+        margin-left: 5%;
+    }
 
-        .ads {
-            position: fixed;
-            right: 0.2rem;
-            bottom: 1.7rem;
-            width: 200px;
-            height: 200px;
-        }
-    </style>
+    .ads {
+        position: fixed;
+        right: 0.2rem;
+        bottom: 1.7rem;
+        width: 200px;
+        height: 200px;
+    }
+.imgfb {
+	position: relative;
+    /* bottom: -1rem; */
+    left: 50%;
+    max-width: 750px;
+    width: 100%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+
+.imgfb a {
+    display: inline
+}
+
+.imgfb a.btn-bottom {
+    position: absolute;
+    top: 25%;
+    left: 30%;
+    width: 40%
+}
+</style>
 </head>
 <body>
 
@@ -243,8 +265,9 @@ document.execCommand("copy");
 $temp.remove();
 swal({
    title: 'Thông Báo',
-   text: '<span style="font-weight: bold; color:#000">ĐẠI LÝ DWIN TẶNG BẠN CODE 100K</span> <br/> <span style="font-weight: bold; font-style: italic; font-size: 25px; color:#F17E2F">EQ' + code + '</span><br/><div style="color:#000;"><span style="font-weight: bold">CHÚ Ý:</span> Code chỉ có thể sử dụng với những tài khoản tải game từ website <span style="font-weight: bold">dwin688.github.io</span> (Code chỉ có thể dùng 1 lần)<br/><br/><div style="display: inline; text-align:center;"><span><a target="_blank" href="https://www.facebook.com/groups/679922266611613/?ref=share"><img style="width:150px" src="https://i.imgur.com/wcn0fKv.png" alt="Group facebook dwin"></a></span><span><a target="_blank" href="https://m.facebook.com/108236348530971/"><img style="width:150px" src="https://i.imgur.com/aYs0GiH.png" alt="Fanpage dwin"></a></span></div></div>',
+   text: '<span style="font-weight: bold; color:#000">ĐẠI LÝ DWIN TẶNG BẠN CODE 100K</span> <br/> <span style="font-weight: bold; font-style: italic; font-size: 25px; color:#F17E2F">EQ' + code + '</span><br/><div style="color:#000;"><span style="font-weight: bold">CHÚ Ý:</span> Code chỉ có thể sử dụng với những tài khoản tải game từ website <span style="font-weight: bold">dwin688.github.io</span> (Code chỉ có thể dùng 1 lần)<br/><br/><div class="imgfb"><a target="_blank" href="https://www.facebook.com/groups/679922266611613/?ref=share"><img style="width:150px" src="https://i.imgur.com/wcn0fKv.png" alt="Group facebook dwin"></a><a target="_blank" href="https://m.facebook.com/108236348530971/"><img style="width:150px" src="https://i.imgur.com/aYs0GiH.png" alt="Fanpage dwin"></a></div></div>',
    html: true,
+   className: "imgfb",
    showCancelButton: false,
    showCloseButton:true
 });
