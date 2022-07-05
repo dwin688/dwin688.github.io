@@ -1,6 +1,6 @@
 //dwinæ›¿æ¢è¶…çº§ç­¾
 //ios
-let ios_download = 'https://8us88.com/?code=';
+let ios_download = 'https://8us88.com/?code=12860164';
 
 //android
 // let android_download = 'https://dwinsource.oss-ap-southeast-1.aliyuncs.com/package/dwin.slk';
